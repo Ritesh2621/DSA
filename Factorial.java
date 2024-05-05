@@ -2,13 +2,19 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args) {
-        System.out.println("Enter the number");
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-       long ans = 1;
-        for(int i= n;i>0;i--){
-          ans = ans *i;
-        }
-          System.out.println(ans);
+         Scanner in = new Scanner(System.in);
+        System.out.println("Enter a Number");
+        int a = in.nextInt();
+
+        fact(a);
+    }
+
+    static void fact(int n){
+        int fac = 1;
+     for (int i=1; i<=n;i++){
+         fac=fac*i;
+     }
+        System.out.println(fac);
+
     }
 }
